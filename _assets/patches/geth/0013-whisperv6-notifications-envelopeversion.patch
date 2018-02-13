@@ -13,7 +13,7 @@ index 106752186..cca3fba71 100644
  
  	crand "crypto/rand"
 +
- 	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
+ 	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
  	"golang.org/x/crypto/pbkdf2"
  )
 @@ -24,7 +25,7 @@ func makeSessionKey() ([]byte, error) {

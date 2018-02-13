@@ -15,7 +15,7 @@ index 000000000..de8ec85be
 +	"github.com/ethereum/go-ethereum/common"
 +	"github.com/ethereum/go-ethereum/crypto"
 +	"github.com/ethereum/go-ethereum/log"
-+	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
++	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
 +)
 +
 +const (
@@ -244,7 +244,7 @@ index 000000000..7f27f0301
 +	"github.com/ethereum/go-ethereum/crypto"
 +	"github.com/ethereum/go-ethereum/log"
 +	"github.com/ethereum/go-ethereum/p2p"
-+	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
++	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
 +	"github.com/status-im/status-go/geth/params"
 +)
 +
@@ -833,7 +833,7 @@ index 000000000..106752186
 +	"crypto/sha256"
 +
 +	crand "crypto/rand"
-+	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
++	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
 +	"golang.org/x/crypto/pbkdf2"
 +)
 +
