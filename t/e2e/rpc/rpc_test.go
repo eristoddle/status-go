@@ -153,7 +153,7 @@ func (s *RPCTestSuite) TestCallRawResultGetTransactionReceipt() {
 	s.NotNil(client)
 
 	jsonResult := client.CallRaw(`{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","params":["0x0ca0d8f2422f62bea77e24ed17db5711a77fa72064cccbb8e53c53b699cd3b34"],"id":5}`)
-	s.Equal(`{"jsonrpc":"2.0","id":5,"result":null}`, jsonResult)
+	s.Equal(`{"jsonrpc":"2.0","id":5,"error":{"code":-32000,"message":"unknown transaction"}}`, jsonResult)
 
 	s.NoError(s.NodeManager.StopNode())
 }
